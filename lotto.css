@@ -1,0 +1,73 @@
+:root {
+  --number-dim: 100px;
+  --main-font:  Montserrat;
+}
+
+body {
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+ul#lotto_list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 26px;
+  align-content: baseline;
+}
+
+li.number {
+  width: var(--number-dim);
+  height: var(--number-dim);
+  border: 1px solid #333;
+  margin: 0 20px 20px 0;
+  background: radial-gradient(#EFEFEF 50%, #AAA);
+  font-family: var(--main-font);
+  color: #555;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: var(--number-dim);
+  text-shadow: -1px 1px 2px #000;
+  border-radius: 60px;
+  box-shadow: 4px 6px 6px 0 #333;
+}
+
+a#button {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  font-family: var(--main-font);
+  left: calc(50% - 63px);
+  font-size: 22px;
+  font-weight: bold;
+  background: #065182;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #DDDDDD;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 0px #000;
+  transition: all 0.2s linear;
+  opacity: 0.5;
+}
+
+a#settings {
+  background-image: url(img/settings.svg);
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+  position: fixed;
+  right: 0;
+  background-color: #065182;
+  padding: 5px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: 6px;
+  border-radius: 4px 0 0 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+a#button:hover, a#settings:hover {
+  opacity: 0.8;
+}
